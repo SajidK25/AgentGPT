@@ -15,7 +15,7 @@ services:
       - /next/.next
     labels:
       - "traefik.enable=true"
-      - "traefik.docker.network=auto-gpt.tech"
+      # - "traefik.docker.network=auto-gpt.tech"
       - "traefik.http.routers.nextv09-insecure.rule=Host(`chat.t99ltd.info`)"
       - "traefik.http.routers.nextv09-insecure.entrypoints=web"
       - "traefik.http.middlewares.nextv09-redirect-web-secure.redirectscheme.scheme=https"
@@ -40,7 +40,7 @@ services:
     restart: always
     labels:
       - "traefik.enable=true"
-      - "traefik.docker.network=auto-gpt.tech"
+      # - "traefik.docker.network=auto-gpt.tech"
       - "traefik.http.routers.platform-v09-insecure.rule=Host(`backend.t99ltd.info`)"
       - "traefik.http.routers.platform-v09-insecure.entrypoints=web"
       - "traefik.http.middlewares.platform-v09-redirect-web-secure.redirectscheme.scheme=https"
