@@ -103,12 +103,12 @@ services:
     networks:
       - default
 
-  docs:
-    build: ./docs
-    ports:
-      - "3005:3001"
-    networks:
-      - default
+  # docs:
+  #   build: ./docs
+  #   ports:
+  #     - "3005:3001"
+  #   networks:
+  #     - default
 
 volumes:
   weaviate:
